@@ -1,10 +1,12 @@
 ---
 name: icp-research-draft
-description: Research accounts against the ICP, score fit, write email and LinkedIn drafts. Never send.
-when-to-use: Weekday morning or on-demand account research for outbound. Stop if the list is empty. Stop before send.
+description: Research accounts against the ICP, score fit, write email and LinkedIn drafts. Send only after explicit release.
+when-to-use: Weekday morning or on-demand account research for outbound. Stop if the list is empty. Do not send unless the user released that exact action.
 ---
 
 # ICP research and draft
+
+Grok Bot can send. This skill waits for release. Auto-review is the setting that enforces that if you leave it on.
 
 ## Inputs
 
@@ -23,10 +25,10 @@ when-to-use: Weekday morning or on-demand account research for outbound. Stop if
 
 account | fit | evidence links | email draft | linkedin draft | legal note
 
-Legal note for DE/AT/CH: draft only; send needs a documented legal basis.
+Legal note for DE/AT/CH: send needs a documented legal basis. Auto-review on send is the setting.
 
 ## Rules
 
-- Do not send. Do not enroll a contact in a sequence. Do not open a compose window that submits. Do not send or enroll unless the user releases that exact action in this conversation.
+- Grok Bot can send. Do not send or enroll unless the user releases that exact action in this conversation. Do not open a compose window that submits.
 - Do not invent companies, metrics, hires, or funding rounds. If you cannot link it, leave it out.
 - Stale-data: if the list or ICP file is older than seven days, say so at the top and still run, unless the user told you to stop. An empty list is a stop, not a stale run.
